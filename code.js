@@ -22,6 +22,6 @@ function isEven(number) {
     return number % 2 == 0;
 }
 
-function isVowel() {
-    return false;
+function isVowel(character) {
+    return character == 'a';
 }
