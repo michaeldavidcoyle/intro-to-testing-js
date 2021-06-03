@@ -23,5 +23,8 @@ function isEven(number) {
 }
 
 function isVowel(character) {
-    return character == 'a';
+    if (typeof character == 'undefined' || typeof character == 'number') {
+        return false;
+    }
+    return character.toLowerCase() == 'a';
 }

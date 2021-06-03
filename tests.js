@@ -119,4 +119,13 @@ describe('isVowel', function() {
     it('should return true when passed "a"', function() {
         expect(isVowel("a")).toBe(true);
     });
+    it('should return true when passed "A"', function() {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return false when passed "y"', function() {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false when passed a number', function() {
+        expect(isVowel(4)).toBe(false);
+    });
 });
