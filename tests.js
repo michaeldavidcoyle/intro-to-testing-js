@@ -166,4 +166,7 @@ describe('add', function() {
     it('should return NaN when passed a number and a non-numeric value', function() {
         expect(add(2, 'apples')).toBeNaN();
     });
+    it('should return NaN when called without any argument', function() {
+        expect(add()).toBeNaN();
+    });
 });
