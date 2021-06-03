@@ -62,3 +62,9 @@ describe('sayHello', function() {
         expect(sayHello( function() {} )).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+});
