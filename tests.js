@@ -160,7 +160,10 @@ describe('add', function() {
     it('should return 6 when passed "-4" and "10"', function() {
         expect(add("-4", "10")).toBe(6);
     });
-    it('should return NaN when passed any non-numeric values', function() {
+    it('should return NaN when passed two non-numeric values', function() {
         expect(add('banana', 'split')).toBeNaN();
+    });
+    it('should return NaN when passed a number and a non-numeric value', function() {
+        expect(add(2, 'apples')).toBeNaN();
     });
 });
