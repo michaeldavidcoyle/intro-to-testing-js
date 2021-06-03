@@ -23,8 +23,11 @@ function isEven(number) {
 }
 
 function isVowel(character) {
-    if (typeof character == 'undefined' || typeof character == 'number' || typeof character == 'boolean') {
+    if (typeof character != 'string') {
         return false;
     }
-    return character.toLowerCase() == 'a';
+
+    character = character.toLowerCase();
+
+    return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
 }
