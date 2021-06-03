@@ -14,3 +14,5 @@ function sayHello(name) {
 function isFive(input) {
     return input == 5;
 }
+
+function isEven() {}
