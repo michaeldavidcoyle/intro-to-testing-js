@@ -11,4 +11,6 @@ function sayHello(name) {
     return "Hello, " + name + "!";
 }
 
-function isFive() {}
+function isFive() {
+    return false;
+}
