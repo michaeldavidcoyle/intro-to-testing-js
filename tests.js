@@ -52,4 +52,13 @@ describe('sayHello', function() {
     it('should return the string "Hello, World!" when passed a numeric string', function() {
         expect(sayHello("5")).toBe("Hello, World!");
     });
+    it('should return the string "Hello, World!" when passed an array', function() {
+        expect(sayHello( ["Jane", "Alex", "Pat"] )).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed an object', function() {
+        expect(sayHello( {} )).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed a function', function() {
+        expect(sayHello( function() {} )).toBe("Hello, World!");
+    });
 });
