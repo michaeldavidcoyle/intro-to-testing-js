@@ -70,4 +70,7 @@ describe('isFive', function() {
     it ('should return a boolean when executed', function() {
         expect(typeof isFive()).toBe('boolean')
     });
+    it ('should return true when passed the number 5', function() {
+        expect(isFive(5)).toBe(true)
+    });
 });
