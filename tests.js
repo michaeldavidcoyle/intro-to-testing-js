@@ -39,4 +39,17 @@ describe('sayHello', function() {
     it('should return the string "Hello, World!" when passing false', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    // edge cases
+    it('should return the string "Hello, World!" when argument is null', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed an empty string', function() {
+        expect(sayHello('')).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed a number', function() {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed a numeric string', function() {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
 });

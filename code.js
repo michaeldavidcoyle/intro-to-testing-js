@@ -4,7 +4,7 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-    if (typeof name === 'undefined' || typeof name === 'boolean') {
+    if (typeof name === 'undefined' || typeof name === 'boolean' || typeof name == 'number' || name == null || name === '' || !isNaN(parseFloat(name))) {
         name = "World";
     }
     return "Hello, " + name + "!";
