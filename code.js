@@ -33,8 +33,12 @@ function isVowel(character) {
 }
 
 function add(addendA, addendB) {
+    addendA = Number(addendA);
+    addendB = Number(addendB);
+
     if ( isNaN(addendA) || isNaN(addendB)) {
         return NaN;
     }
-    return Number(addendA) + Number(addendB);
+    
+    return addendA + addendB;
 }
