@@ -157,4 +157,7 @@ describe('add', function() {
     it('should return 11 when passed "5" and 6', function() {
         expect(add("5", 6)).toBe(11);
     });
+    it('should return 6 when passed "-4" and "10"', function() {
+        expect(add("-4", "10")).toBe(6);
+    });
 });
