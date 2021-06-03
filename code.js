@@ -33,5 +33,5 @@ function isVowel(character) {
 }
 
 function add(addendA, addendB) {
-    return addendA + addendB;
+    return Number(addendA) + Number(addendB);
 }
