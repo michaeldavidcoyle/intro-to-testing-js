@@ -32,4 +32,6 @@ function isVowel(character) {
     return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
 }
 
-function add() {}
+function add(addendA, addendB) {
+    return addendA + addendB;
+}
