@@ -33,10 +33,8 @@ describe('sayHello', function() {
     it('should return the string "Hello, World!" when called without argument', function() {
         expect(sayHello()).toBe("Hello, World!");
     });
-    it('should return the string "Hello, World!" when passing true', function() {
+    it('should return the string "Hello, World!" when passed a boolean', function() {
         expect(sayHello(true)).toBe("Hello, World!");
-    });
-    it('should return the string "Hello, World!" when passing false', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
     // edge cases
