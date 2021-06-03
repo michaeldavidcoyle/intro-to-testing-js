@@ -23,7 +23,7 @@ function isEven(number) {
 }
 
 function isVowel(character) {
-    if (typeof character == 'undefined' || typeof character == 'number') {
+    if (typeof character == 'undefined' || typeof character == 'number' || typeof character == 'boolean') {
         return false;
     }
     return character.toLowerCase() == 'a';

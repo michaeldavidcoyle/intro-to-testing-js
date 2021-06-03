@@ -128,4 +128,11 @@ describe('isVowel', function() {
     it('should return false when passed a number', function() {
         expect(isVowel(4)).toBe(false);
     });
+    it('should return false when passed true or false', function() {
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when passed "banana"', function() {
+        expect(isVowel("banana")).toBe(false);
+    });
 });
